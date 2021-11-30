@@ -1189,7 +1189,7 @@ SALTY_FUNC(generichash_blake2b, 2) DO
                 input.size, NULL, 0), hash);
 END_OK_WITH(hash);
 
-SALTY_FUNC(generichash_blake2b, 3) DO
+SALTY_FUNC(generichash_blake2b_key, 3) DO
     SALTY_INPUT_UINT64(0, outlen);
     SALTY_INPUT_BIN(1, input, SALTY_BIN_NO_SIZE);
     SALTY_INPUT_BIN(2, key, crypto_generichash_blake2b_KEYBYTES_MIN);
