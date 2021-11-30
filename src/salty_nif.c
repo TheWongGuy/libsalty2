@@ -2125,7 +2125,7 @@ salty_exports[] = {
     SALTY_EXPORT_CONS(generichash_blake2b_SALTBYTES, 0),
     SALTY_EXPORT_CONS(generichash_blake2b_PERSONALBYTES, 0),
     SALTY_EXPORT_FUNC(generichash_blake2b, 2),
-    SALTY_EXPORT_FUNC(generichash_blake2b, 3),
+    SALTY_EXPORT_FUNC(generichash_blake2b_key, 3),
     SALTY_EXPORT_FUNC(generichash_blake2b_salt_personal, 5),
     SALTY_EXPORT_FUNC(generichash_blake2b_init, 2),
     SALTY_EXPORT_FUNC(generichash_blake2b_init_salt_personal, 4),
