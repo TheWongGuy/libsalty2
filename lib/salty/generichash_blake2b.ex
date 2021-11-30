@@ -33,6 +33,10 @@ defmodule Salty.Generichash.Blake2b do
     C.generichash_blake2b_PERSONALBYTES()
   end
 
+  def hash(outlen, data) do
+    C.generichash_blake2b(outlen, data)
+  end
+
   def hash(outlen, data, key) do
     C.generichash_blake2b(outlen, data, key)
   end
